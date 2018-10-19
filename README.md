@@ -16,7 +16,7 @@ The finished app consists of four modules. A Java library that provides jokes, a
 
 ## Libraries
 
-* [Google Play Services (Ads)]https://developers.google.com/android/guides/setup)
+* [Google Play Services (Ads)](https://developers.google.com/android/guides/setup)
 
 
 ## Android Developer Nanodegree
