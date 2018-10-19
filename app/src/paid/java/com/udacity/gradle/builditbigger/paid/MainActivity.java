@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity implements JokeAsyncTask.Asy
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //new JokeAsyncTask(MainActivity.this, progressBar).execute();
                 progressBar.setVisibility(View.VISIBLE);
                 new JokeAsyncTask(MainActivity.this).execute();
             }
@@ -46,7 +45,6 @@ public class MainActivity extends AppCompatActivity implements JokeAsyncTask.Asy
 
     @Override
     public void requestComplete(String joke) {
-
         progressBar.setVisibility(View.GONE);
 
         Intent intent = new Intent(context, JokeActivity.class);

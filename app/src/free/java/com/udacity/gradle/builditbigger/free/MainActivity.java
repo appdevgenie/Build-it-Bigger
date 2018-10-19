@@ -69,7 +69,6 @@ public class MainActivity extends AppCompatActivity implements JokeAsyncTask.Asy
     }
 
     private void showJoke() {
-        //new JokeAsyncTask(MainActivity.this, progressBar).execute();
         progressBar.setVisibility(View.VISIBLE);
         new JokeAsyncTask(this).execute();
     }
@@ -77,7 +76,6 @@ public class MainActivity extends AppCompatActivity implements JokeAsyncTask.Asy
 
     @Override
     public void requestComplete(String joke) {
-
         progressBar.setVisibility(View.GONE);
 
         Intent intent = new Intent(context, JokeActivity.class);
